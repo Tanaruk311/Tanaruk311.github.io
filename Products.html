@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+  
+</head>
+<body>
+
+  <!--header-->
+  <header class="p-3 border-bottom mb-5">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="/img/baby-clothing.png" alt="" class="me-5" style="width: 50px;height: 50px;"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2  fw-bold font-">Home</a></li>
+          <li><a href="Products.html" class="nav-link px-2  fw-bold">Products</a></li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3  mt-2 d-flex">
+          <input  type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <button class="ms-1 bg-white btn btn-dark"><i class="fa-solid fa-magnifying-glass" style="color: #161617;"></i></button>
+        </form>
+       <a href="#" class="nav-link  ms-5 mt-2 d-sm-none d-lg-block" style="color: #f5f5f5;">LOGIN/REGISTER</a>
+        <div class="cart">
+          <ul>
+            <li class="d-sm-none  d-md-none d-lg-block mt-3" >
+            <a href=""> <i class="fa-solid fa-basket-shopping" style="color: #f5f5f5; display: block;" id="myBtn"></i></a>
+          </li>
+          </ul>
+        </div>
+    
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Products-->
+ <section id="Products">
+    <div class="product" id="productlist">
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1542629458-eaa56d608062?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Glasses</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">2500 THB</p>
+          <button class="btn-Cart" ><a href="#modal-cart">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+          
+        </div>
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Women shirt</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i style="font: weight 50px;">(50)</i>
+          </p>
+          <p stlye="font-size: 1vw;">1200 THB</p>
+          <button class="btn-Cart" ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1499971856191-1a420a42b498?q=80&w=1362&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Sweater</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(92)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">1500 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+        
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1617331721458-bd3bd3f9c7f8?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Jacket</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i style="font: weight 50px;">(74)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">3200 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+      </div>
+    </div>
+      
+    <div class="product">
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1611911813383-67769b37a149?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Knit shirt</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(141)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">2800 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1609172795052-05bf80681031?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Prada</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(25)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">64000 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">White sweate</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i style="font: weight 50px;">(150)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">3200 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://plus.unsplash.com/premium_photo-1675183713626-81e6de4552e1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Brown coat</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">5500 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+      </div>
+
+
+      <!--product 9-->
+      <div class="product">
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8amFja2V0fGVufDB8fDB8fHww" alt="">
+          <p style="font-size: 1.2vw;">Black jacket</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">3200 THB</p>
+          <button class="btn-Cart" ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+          
+        </div>
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;"> Shoe</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">3800 THB</p>
+          <button class="btn-Cart" ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product"><a href="checkout.html">Buy Now</a></button> 
+         
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1596993100471-c3905dafa78e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Fashion Jacket</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">5500 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+        
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1669479032946-b995b9c43917?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" alt="">
+          <p style="font-size: 1.2vw;">Street Jacket</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">3200 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+      </div>
+    </div>
+      
+    <div class="product">
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1611911813383-67769b37a149?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Knit shirt</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">2800 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1616088728028-a37e34f504c7?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Blue Jacket</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">4500 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1644483878392-206392bffd5c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Cardigan</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">2600 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+
+        <div class="product-items">
+          <img class="product-img" src="https://images.unsplash.com/photo-1638780853522-1ef7f826cd1a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <p style="font-size: 1.2vw;">Blue shirt</p>
+          <p style="font-size: 1.2vw;">
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 
+            <i style="font: weight 50px;">(121)</i>        
+          </p>
+          <p stlye="font-size: 1vw;">1700 THB</p>
+          <button class="btn-Cart"  ><a href="#">Add to Cart</a></button> 
+          <button class="btn-product" ><a href="checkout.html">Buy Now</a></button> 
+        </div>
+      </div>   
+   
+    </div>
+ </section>
+
+        <!--cart section-->
+        <div class="modal" style="display:none" id="myModal">
+          <span class="close">&times;</span>
+          <div class="modal-bg"></div>
+          <div class="modal-page">
+            <h2>My cart</h2>
+            <br>
+            <div class="cartlist">
+              <div class="cartlist-item">
+                <div class="cartlist-left">
+                 <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                  <div class="cartlist-detail">
+                    <p style="font-size: 1.5vw;">Product name</p>
+                    <p style="font-size: 1.2vw;">2500 THB</p>
+                  </div>
+                </div>
+                <div class="cartlist-right">
+                    <P class="btn-c">-</P>
+                    <P>1</P>
+                    <p class="btn-c">+</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartlist">
+              <div class="cartlist-item">
+                <div class="cartlist-left">
+                 <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                  <div class="cartlist-detail">
+                    <p style="font-size: 1.5vw;">Product name</p>
+                    <p style="font-size: 1.2vw;">2500 THB</p>
+                  </div>
+                </div>
+                <div class="cartlist-right">
+                    <P class="btn-c">-</P>
+                    <P>1</P>
+                    <p class="btn-c">+</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartlist">
+              <div class="cartlist-item">
+                <div class="cartlist-left">
+                 <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                  <div class="cartlist-detail">
+                    <p style="font-size: 1.5vw;">Product name</p>
+                    <p style="font-size: 1.2vw;">2500 THB</p>
+                  </div>
+                </div>
+                <div class="cartlist-right">
+                    <P class="btn-c">-</P>
+                    <P>1</P>
+                    <p class="btn-c">+</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn-control">
+              <button class="btn" id="Closer">Cancle</button>
+              <button class="btn btn-buy">Buy</button>
+              </div>
+          </div>
+        </div>
+
+
+
+
+        <section id="footer">
+          <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #fafaff;"></i><use xlink:href="#instagram"></use></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i><use xlink:href="#twiitwer"></use></svg></a></li>
+                <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </footer>
+          </div>
+          
+        </section>
+
+
+        <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/923c03d73b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
