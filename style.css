@@ -148,7 +148,7 @@ header{
     background-color: #161617;
     padding: 5px;
     border-radius: 8px;
-    width: 80px;
+    width: 1000px;
     margin-left: 5px;
 }
 .btn-product a {
@@ -172,7 +172,7 @@ header{
     background-color: rgba(148, 148, 148, 0.849);
     padding: 5px;
     border-radius: 8px;
-    width: 80px;
+    width: 100px;
     border: solid 1px rgba(148, 148, 148, 0.849); ;
 }
 .btn-Cart a {
